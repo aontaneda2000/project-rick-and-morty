@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  /* ============================ COLORES ============================  */
+  --color-fisrt: #197f5b;
+  --color-second: #ef9919;
+  --color-third: #f9f5f2;
+  --color-four: #f9f5f2;
+  --color-fith: #000000;
+  --max-width: 1200px;
+
+  /* ============== TIPOGRAFIA =============  */
+  --font: "Poppins", sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  /* Evita barra de desplzamiento horizontal */
+  overflow-x: hidden;
+  font-family: var(--font);
+  background: #062226d6;
+  color: #f9f5f2;
+}
+
+img {
+  width: 100%;
+}
+
+/* formulario */
+.card__input {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.card__form {
+  background-color: #062226;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__btn {
+  border: none;
+  margin-left: 1rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 10px;
+  background-color: #197f5b;
+  cursor: pointer;
+  color: #f9f5f2;
+}
+.card__btn:hover {
+  background-color: #f9f5f2;
+  color: #000000;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+}
+
+/* ======================================= */
+/* CARD---LOCATION */
+/* ======================================= */
+
+.card__location-nav {
+  list-style: none;
+  background: #062226;
+}
+
+li {
+  padding: 1rem 0;
+}
+span {
+  font-weight: bold;
+}
+
+/* ======================================= */
+/* CARD---RESIDENT */
+/* ======================================= */
+
+.card__img {
+  width: 300px;
+  height: auto;
+}
+.card__resident {
+  padding-left: 2rem;
+  border: 2px solid white;
+  background-color: #062226;
+  border-radius: 5px;
+}
+.card__resident-nav {
+  list-style: none;
+}
+
+.circle {
+  background-color: rgb(186, 161, 161);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+  .card__location-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card__app_resident {
+    /* display: flex;
+    flex-direction: row;
+    gap: 1rem; */
+    display: flex;
+    /* genera espacio vertical y horizontal */
+    gap: 1rem;
+    /* genera un salto de linea si no cabe el contenido */
+    flex-wrap: wrap;
+    /* efecto para que se alinen los elementos */
+    justify-content: center;
+  }
+}
